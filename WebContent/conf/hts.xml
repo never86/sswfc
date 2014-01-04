@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hts>
+	<ht type="Human Task">
+		<cid>httpEndpoint:1</cid>
+		<id>5c9b0992-3bff-4ff4-aa22-4824afeacb80</id>
+		<receivedTime>2013-4-18 12:26:35</receivedTime>
+		<workflowName>human_interaction</workflowName>
+		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
+		<sender>csw2012_HumanAgent</sender>
+		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
+			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
+			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
+			&lt;Fun&gt;value&lt;/Fun&gt; &lt;Var&gt;@50443&lt;/Var&gt;
+			&lt;/Expr&gt; &lt;/Atom&gt; &lt;/content&gt;</payload>
+		<solution>-</solution>
+		<state>0</state>
+		<actualSolver>-</actualSolver>
+		<expectedSolver>-</expectedSolver>
+	</ht>
+</hts>
