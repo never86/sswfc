@@ -64,7 +64,7 @@ body {
           </tr>
           <tr>
             <td height="40" class="downline"><div align="center" class="STYLE20">
-              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="client.jsp" class="l-blue1">Submition</a></div>
+              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="client.jsp" class="l-blue1">Submission</a></div>
             </div></td>
           </tr>
           <tr>
@@ -89,7 +89,7 @@ body {
           </tr>
         </table>
         <br><br><br></td>
-        <td width="746" valign="top">
+        <td width="746" align="center" valign="top">
 	
 <br>
 <br>
@@ -121,21 +121,21 @@ body {
 <br><br>
 
 
-<table width="90%" border="0" align="center" cellpadding="0"
-				cellspacing="0" bordercolor="#E8AB78"  bgcolor="FFFFFF" class="tableguide-1"
+<table width="98%" border="0" align="center" cellpadding="3"
+				cellspacing="0" bordercolor="#E8AB78"  bgcolor="FFFFFF" class="table-4"
 				style="border: 1px #000000 solid; border-right: none; border-bottom: none">
 			
 
 				<tr class="table-wei3">
-				  <td height="30" class="downline-gud1"><div align="center"><strong>Conversation ID</strong></div></td>
+				  <td height="30" class="downline-gud1"><div align="center"><strong>XID</strong></div></td>
 							<td   height="30" class="downline-gud1"><div align="center"><strong>Type</strong></div></td>
 							<td  height="30" class="downline-gud1"><div align="center"><strong>Sender</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Workflow Name </strong></div></td>
-							<td   height="30" class="downline-gud1"><div align="center"><strong>Expected Solver</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Received Time</strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Workflow name </strong></div></td>
+							<td   height="30" class="downline-gud1"><div align="center"><strong>Expected solver</strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Received time</strong></div></td>
 							<td height="30" class="downline-gud1"><div align="center"><strong>State</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Solved Time</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Actual Solver</strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Solved time</strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Actual solver</strong></div></td>
 		  </tr>
 							
 							

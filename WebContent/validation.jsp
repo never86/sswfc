@@ -95,10 +95,11 @@ body {
 		<%
 								String cid = request.getParameter("cid");
 								String solver = request.getParameter("solver");
+								String sender = request.getParameter("sender");
 								String solution = request.getParameter("solution");
 								
 								ReplyProcessor rp = new ReplyProcessor();
-								String message = rp.messageGenerator(cid, solver, solution);
+								String message = rp.messageGenerator(cid, solution);
 								boolean tag = rp.send(message);
 								if(tag){
 								new HumanAgent().updateTask(cid, solver, solution);

@@ -105,7 +105,7 @@ body {
 		    </select></td>
           </tr>
           <tr>
-            <td valign="top">&nbsp;&nbsp;<span id="result"></span><br></td>
+            <td valign="top"><span id="result"></span><br></td>
           </tr>
         </table>
 		</form></td>

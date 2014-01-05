@@ -91,9 +91,9 @@ body {
         <br><br><br></td>
         <td width="80%" valign="top">
 	
-          <div align="right"><br>
+          <div align="right" style="font-size:10px"><br>
             <table width="90%" border="0" align="center"
-				cellspacing="0" bordercolor="#E8AB78"  bgcolor="FFFFFF"
+				cellspacing="0" bordercolor="#E8AB78"  bgcolor="FFFFFF" class="table-4"
 				style="border: 1px #000000 solid; border-right: none; border-bottom: none">
               
               <%
@@ -152,7 +152,7 @@ body {
                 </div></td>
             </tr>
               <tr><td height="30" class="downline-gud1"><div align="right"><strong>Solver:&nbsp; </strong></div></td>
-						      <td height="40" class="downline-gud1">&nbsp;&nbsp;<input name="solver" height="100 px" class="input1" size="30" value="csw2012_HumanAgentServlet"></td></tr>
+						      <td height="40" class="downline-gud1">&nbsp;&nbsp;<input name="solver" height="100 px" class="input1" size="30"  value="User"></td></tr>
               <tr>
                 <td height="50" colspan="2" class="downline-gud1" >
                 <div align="center"><input value="Submit" type="submit" /> </div>         </td>

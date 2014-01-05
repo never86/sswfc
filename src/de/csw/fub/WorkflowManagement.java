@@ -69,9 +69,9 @@ public class WorkflowManagement {
 
 		if (interfaceElement == null)
 			return "Interal Error!";
-		String htmlContent = "<table cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"40\"><span class=\"STYLE4\">&nbsp;Workflow name: "
+		String htmlContent = "<table cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"20\"><span class=\"STYLE4\">&nbsp;Workflow name: "
 				+ interfaceName
-				+ ".</span></td></tr><tr><td height=\"40\"><span class=\"STYLE4\"  style=\"line-height:1.2\">&nbsp;Workflow description: "
+				+ ".</span></td></tr><tr><td height=\"20\"><span class=\"STYLE4\" style=\"line-height:1.2\">&nbsp;Workflow description: "
 				+ interfaceElement.selectSingleNode("label/Expr/Ind").getText()
 				+ "</span></td></tr>";
 		List<Element> list = interfaceElement.elements();
@@ -89,7 +89,7 @@ public class WorkflowManagement {
 
 	private String exprElementToHtml(Element element, String space) {
 		String exprContent = space
-				+ "<tr><td><table width=\"100%\"><tr><td  height=\"30\">"
+				+ "<tr><td><table width=\"100%\"><tr><td  height=\"20\">"
 				+ element.element("Fun").attributeValue("meta") + "</td></tr>";
 		List<Element> list = element.elements();
 		for (int i = 0; i < list.size(); i++) {
@@ -106,7 +106,7 @@ public class WorkflowManagement {
 	}
 
 	private String indElementToHtml(Element ele, String space) {
-		String indContent = "<tr><td height=\"30\">" + space;
+		String indContent = "<tr><td height=\"20\">" + space;
 		String value = "";
 		if (ele.attribute("default") != null)
 			value = ele.attributeValue("default");
@@ -222,9 +222,9 @@ public class WorkflowManagement {
 			e.printStackTrace();
 		}
 		Element interfaceElement = doc.getRootElement();
-		String htmlContent = "<table cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"20\">Workflow name: "
+		String htmlContent = "<table cellpadding=\"3\" cellspacing=\"3\"  width=\"99%\"><tr><td height=\"20\">Workflow name: "
 				+ interfaceElement.elementText("Fun")
-				+ "</td></tr><tr><td height=\"20\"></td></tr>";
+				+ "</td></tr>";
 		List<Element> list = interfaceElement.elements();
 		for (int i = 1; i < list.size(); i++) {
 			Element ele = list.get(i);
@@ -241,16 +241,16 @@ public class WorkflowManagement {
 	private String exprElementToHtml1(Element element, String space) {
 		String exprContent = space
 				+ "<tr><td><table width=\"100%\"><tr><td  height=\"20\">"
-				+ element.element("Fun").attributeValue("meta") + "</td></tr>";
+				+ element.element("Fun").attributeValue("meta") + ":</td></tr>";
 		List<Element> list = element.elements();
 		for (int i = 0; i < list.size(); i++) {
 			Element ele = list.get(i);
 			if (ele.getName().equalsIgnoreCase("Expr"))
 				exprContent += exprElementToHtml1(ele, space
-						+ "&nbsp;&nbsp;&nbsp;&nbsp;");
+						+ "&nbsp;&nbsp;");
 			if (ele.getName().equalsIgnoreCase("Var"))
 				exprContent += indElementToHtml1(ele, space
-						+ "&nbsp;&nbsp;&nbsp;&nbsp;");
+						+ "&nbsp;&nbsp;");
 		}
 		exprContent += "</table></td></tr>";
 		return exprContent;

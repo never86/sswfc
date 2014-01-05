@@ -48,7 +48,7 @@ public class GenerateHTMLServlet extends HttpServlet {
 				"iso-8859-1"), "GBK");
 		
 		out.print(WorkflowManagement.INSTANCE.provaInterface2Html(workflowName));
-		out.println("<br/><div align=\"left\">&nbsp;&nbsp;<input value=\"Generate RuleML IDL \" type=\"submit\" /> </div><br/>");
+		out.println("<br/><div align=\"left\">&nbsp;&nbsp;<input value=\"Next step \" type=\"submit\" /> </div><br/>");
 		out.flush();
 		out.close();
 	}

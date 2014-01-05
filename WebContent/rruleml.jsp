@@ -90,25 +90,25 @@ body {
         <br><br><br></td>
         <td width="746" valign="top">
 		
-		<br>
-		<table width="80%" border="0"  cellpadding="0" cellspacing="0" align="center">
+		<%
+            String desc = WorkflowManagement.INSTANCE.toRRuleML(request);
+            String content = WorkflowManagement.INSTANCE.userInput2Html(desc);
+            %>
+		<table width="80%" border="0" align="center"  cellpadding="0" cellspacing="0">
 		<tr>
           <td height="30" valign="center" >
             <div align="left"  class="STYLE20">User input confirmation: </div></td>
         </tr>
+		 
           <tr>
-          <td height="30" valign="top" >
-            <%
-            String desc = WorkflowManagement.INSTANCE.toRRuleML(request);
-            String content = WorkflowManagement.INSTANCE.userInput2Html(desc);
-            %>
+          <td  valign="top" bgcolor="#EAEAEA" >
             <div align="left"><%=content%></div>
             <textarea name="rulemlIDL" style="display:none;"><%=desc%></textarea>
             </td>
         </tr>
          <tr>
           <td height="50" colspan="2" >
-             <div align="center"><input value="Submit" type="button" onClick="analyse()"/> </div>         </td>
+             <div align="center"><input value="Submit" name="submit" type="button" onClick="analyse()"/> </div>         </td>
         </tr>
         
          <tr>

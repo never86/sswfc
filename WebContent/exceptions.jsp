@@ -89,10 +89,10 @@ body {
           </tr>
         </table>
         <br><br><br></td>
-        <td width="746" valign="top">
+        <td width="746" align="center" valign="top">
 		<form name="form1" method="post">
 <br><br>
-<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="3">
   <tr>
     <td>
 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -102,9 +102,9 @@ body {
 </table></td>
   </tr>
 <tr>
-  <td><br>
+  <td align="center"><br>
 <table width="100%" height="77" border="0" align="center" cellpadding="3"
-				cellspacing="0" bordercolor="#E8AB78"  bgcolor="FFFFFF"
+				cellspacing="0" bordercolor="#E8AB78"  bgcolor="FFFFFF" class="table-4"
 				style="border: 1px #000000 solid; border-right: none; border-bottom: none">
 			
 	
@@ -112,8 +112,8 @@ body {
 				  <td  width="76" height="39" class="downline-gud1"><div align="center"><strong>XID</strong></div></td>
 				  <td  width="35" class="downline-gud1"><div align="center"><strong>Type</strong></div></td>
 				  <td  width="40" class="downline-gud1"><div align="center"><strong>Sender</strong></div></td>
-				  <td  width="67" class="downline-gud1"><div align="center"><strong>Workflow Name </strong></div></td>
-				  <td  width="80" class="downline-gud1"><div align="center"><strong>Received Time</strong></div></td>
+				  <td  width="67" class="downline-gud1"><div align="center"><strong>Workflow name </strong></div></td>
+				  <td  width="80" class="downline-gud1"><div align="center"><strong>Received time</strong></div></td>
 				  <td  width="168" class="downline-gud1"><div align="center"><strong>Payload</strong></div></td>
 				</tr>
 							

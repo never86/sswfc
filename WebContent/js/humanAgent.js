@@ -57,6 +57,7 @@ function analyse() {
 
 	
 	createXMLHttpRequest();
+	document.form1.submit.disabled=true;
 	XMLHttpReq.open("GET", "http://localhost:8888?payload=" + rulemlIDL, true);
 	document.getElementById("result").innerHTML = "Waiting for the results from the workflow engine...";
 	XMLHttpReq.onreadystatechange = processAnalyseResponse;
@@ -69,6 +70,7 @@ function processAnalyseResponse() {
 	if (XMLHttpReq.readyState == 4) {
 		if (XMLHttpReq.status == 200) {
 			document.getElementById("result").innerHTML= XMLHttpReq.responseText;
+			document.form1.submit.disabled=false;
 		} else {
 			window.alert("Parsing Error!");
 		}
