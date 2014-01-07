@@ -69,9 +69,9 @@ public class WorkflowManagement {
 
 		if (interfaceElement == null)
 			return "Interal Error!";
-		String htmlContent = "<table cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"20\"><span class=\"STYLE4\">&nbsp;Workflow name: "
+		String htmlContent = "<table cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"20\" valign=\"top\"><span class=\"STYLE4\">Workflow: "
 				+ interfaceName
-				+ ".</span></td></tr><tr><td height=\"20\"><span class=\"STYLE4\" style=\"line-height:1.2\">&nbsp;Workflow description: "
+				+ ".</span></td></tr><tr><td height=\"20\"><span class=\"STYLE4\" style=\"line-height:1.2\">Description: "
 				+ interfaceElement.selectSingleNode("label/Expr/Ind").getText()
 				+ "</span></td></tr>";
 		List<Element> list = interfaceElement.elements();
@@ -96,10 +96,10 @@ public class WorkflowManagement {
 			Element ele = list.get(i);
 			if (ele.getName().equalsIgnoreCase("Expr"))
 				exprContent += exprElementToHtml(ele, space
-						+ "&nbsp;&nbsp;&nbsp;&nbsp;");
+						+ "&nbsp;&nbsp;");
 			if (ele.getName().equalsIgnoreCase("Var"))
 				exprContent += indElementToHtml(ele, space
-						+ "&nbsp;&nbsp;&nbsp;&nbsp;");
+						+ "&nbsp;&nbsp;");
 		}
 		exprContent += "</table></td></tr>";
 		return exprContent;
@@ -114,7 +114,7 @@ public class WorkflowManagement {
 			indContent += ele.attributeValue("name").trim()
 					+ ":&nbsp;&nbsp;<input class=\"input1\"  size=\"48\" type=\"text\" name=\""
 					+ ele.attributeValue("name").trim() + "\" value=\"" + value
-					+ "\"/>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"STYLE4\">("
+					+ "\"/>&nbsp;&nbsp;<span class=\"STYLE4\">("
 					+ ele.attributeValue("meta") + ")</span>";
 		} else {
 			indContent += ele.getText().trim() + ":&nbsp;&nbsp;";
@@ -144,7 +144,7 @@ public class WorkflowManagement {
 					}
 				}
 			}
-			indContent += "</select>&nbsp;&nbsp;&nbsp;&nbsp;<span class=\"STYLE4\">("
+			indContent += "</select>&nbsp;&nbsp;<span class=\"STYLE4\">("
 					+ ele.attributeValue("meta") + ")</span>";
 		}
 		indContent += "</td></tr>";
@@ -222,7 +222,7 @@ public class WorkflowManagement {
 			e.printStackTrace();
 		}
 		Element interfaceElement = doc.getRootElement();
-		String htmlContent = "<table cellpadding=\"3\" cellspacing=\"3\"  width=\"99%\"><tr><td height=\"20\">Workflow name: "
+		String htmlContent = "<table cellpadding=\"3\" cellspacing=\"3\"  bgcolor=\"#EAEAEA\" style=\"border: 1px #000000 solid;\" width=\"99%\"><tr><td height=\"20\" valign=\"top\">Workflow: "
 				+ interfaceElement.elementText("Fun")
 				+ "</td></tr>";
 		List<Element> list = interfaceElement.elements();

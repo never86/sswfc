@@ -68,9 +68,9 @@ function analyse() {
 }
 function processAnalyseResponse() {
 	if (XMLHttpReq.readyState == 4) {
+		document.form1.submit.disabled=false;
 		if (XMLHttpReq.status == 200) {
 			document.getElementById("result").innerHTML= XMLHttpReq.responseText;
-			document.form1.submit.disabled=false;
 		} else {
 			window.alert("Parsing Error!");
 		}

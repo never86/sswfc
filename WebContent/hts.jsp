@@ -69,7 +69,7 @@ body {
           </tr>
           <tr>
             <td height="40" class="downline"><div align="center" class="STYLE20">
-              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://grid.lzu.edu.cn:6060/sswf-3.0.owl" class="l-blue1">Resources</a></div>
+              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://grid.lzu.edu.cn:6060/openrdf-workbench/" class="l-blue1">Resources</a></div>
             </div></td>
           </tr>
           <tr>
@@ -84,7 +84,7 @@ body {
           </tr>
           <tr>
             <td height="40" class="downline"><div align="center" class="STYLE20">
-              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://yawl.imp.fu-berlin.de/sciworkflows/" class="l-blue1">Project</a> </div>
+              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://yawl.imp.fu-berlin.de/sciworkflows/" class="l-blue1">About Project</a> </div>
             </div></td>
           </tr>
         </table>
@@ -130,12 +130,11 @@ body {
 				  <td height="30" class="downline-gud1"><div align="center"><strong>XID</strong></div></td>
 							<td   height="30" class="downline-gud1"><div align="center"><strong>Type</strong></div></td>
 							<td  height="30" class="downline-gud1"><div align="center"><strong>Sender</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Workflow name </strong></div></td>
-							<td   height="30" class="downline-gud1"><div align="center"><strong>Expected solver</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Received time</strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Workflow</strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Received at </strong></div></td>
 							<td height="30" class="downline-gud1"><div align="center"><strong>State</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Solved time</strong></div></td>
-							<td  height="30" class="downline-gud1"><div align="center"><strong>Actual solver</strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Solved at </strong></div></td>
+							<td  height="30" class="downline-gud1"><div align="center"><strong>Solver</strong></div></td>
 		  </tr>
 							
 							
@@ -174,7 +173,6 @@ body {
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getType()%></div></td>
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getSender()%></div></td>
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getWorkflowName()%></div></td>
-							<td height="38" class="downline-gud1"><div align="center"><%=task.getExpectedSolver()%></div></td>
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getReceivedTime()%></div></td>
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getState()%></div></td>
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getResolvedTime()%></div></td>

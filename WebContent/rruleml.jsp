@@ -68,7 +68,7 @@ body {
           </tr>
           <tr>
             <td height="40" class="downline"><div align="center" class="STYLE20">
-              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://grid.lzu.edu.cn:6060/sswf-3.0.owl" class="l-blue1">Resources</a></div>
+              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://grid.lzu.edu.cn:6060/openrdf-workbench/" class="l-blue1">Resources</a></div>
             </div></td>
           </tr>
           <tr>
@@ -83,7 +83,7 @@ body {
           </tr>
           <tr>
             <td height="40" class="downline"><div align="center" class="STYLE20">
-              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://yawl.imp.fu-berlin.de/sciworkflows/" class="l-blue1">Project</a> </div>
+              <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15" >&nbsp;&nbsp;<a href="http://yawl.imp.fu-berlin.de/sciworkflows/" class="l-blue1">About Project</a> </div>
             </div></td>
           </tr>
         </table>
@@ -94,16 +94,17 @@ body {
             String desc = WorkflowManagement.INSTANCE.toRRuleML(request);
             String content = WorkflowManagement.INSTANCE.userInput2Html(desc);
             %>
+			<textarea name="rulemlIDL" style="display:none;"><%=desc%></textarea>
 		<table width="80%" border="0" align="center"  cellpadding="0" cellspacing="0">
 		<tr>
-          <td height="30" valign="center" >
+          <td valign="center" ><br>
             <div align="left"  class="STYLE20">User input confirmation: </div></td>
         </tr>
 		 
           <tr>
-          <td  valign="top" bgcolor="#EAEAEA" >
+          <td  valign="top">
             <div align="left"><%=content%></div>
-            <textarea name="rulemlIDL" style="display:none;"><%=desc%></textarea>
+            
             </td>
         </tr>
          <tr>
