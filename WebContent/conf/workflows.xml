@@ -62,6 +62,26 @@
 		</Expr>
 	</interface>
 	
+<interface>
+		<label>
+            <!-- Human-oriented description of the interface -->
+            <Expr>
+               <Fun uri="dc:description"/>
+               <Ind>Protein prediciton results analysis.</Ind>
+            </Expr>
+          </label>
+        <Fun per="value">proteinPredicitonAnalysisProcess</Fun>
+		<Expr>
+			<Fun meta="Workflow input(s)">inArgs</Fun>
+			<Var mode="+" type = "java.lang.String" meta="Protein name" default="Q9VAN0" name="protein"></Var>
+			<Var mode="+"  type = "java.lang.String" meta="Gene term" default="GO:0006564" name="goTerm"></Var>
+		</Expr>
+		<Expr>
+			<Fun meta="Workflow ouput(s)">outArgs</Fun>
+			<Var mode="-" meta="Analysis result" default="Result" name="Result"></Var>
+		</Expr>
+	</interface>
+	
 	<interface>
 		<label>
             <!-- Human-oriented description of the interface -->

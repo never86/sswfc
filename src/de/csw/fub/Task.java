@@ -16,7 +16,7 @@ public class Task {
 	public String payload = "-";
 	public String solution = "-";
 	public String actualSolver = "-";
-	public String expectedSolver = "-";
+	// public String expectedSolver = "-";
 	public String sender = "-";
 	public String state = "0";
 	public String id = "-";
@@ -103,13 +103,13 @@ public class Task {
 		this.actualSolver = actualSolver;
 	}
 
-	public String getExpectedSolver() {
-		return expectedSolver;
-	}
-
-	public void setExpectedSolver(String expectedSolver) {
-		this.expectedSolver = expectedSolver;
-	}
+	// public String getExpectedSolver() {
+	// return expectedSolver;
+	// }
+	//
+	// public void setExpectedSolver(String expectedSolver) {
+	// this.expectedSolver = expectedSolver;
+	// }
 
 	public String getSender() {
 		return sender;

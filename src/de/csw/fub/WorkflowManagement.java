@@ -95,11 +95,9 @@ public class WorkflowManagement {
 		for (int i = 0; i < list.size(); i++) {
 			Element ele = list.get(i);
 			if (ele.getName().equalsIgnoreCase("Expr"))
-				exprContent += exprElementToHtml(ele, space
-						+ "&nbsp;&nbsp;");
+				exprContent += exprElementToHtml(ele, space + "&nbsp;&nbsp;");
 			if (ele.getName().equalsIgnoreCase("Var"))
-				exprContent += indElementToHtml(ele, space
-						+ "&nbsp;&nbsp;");
+				exprContent += indElementToHtml(ele, space + "&nbsp;&nbsp;");
 		}
 		exprContent += "</table></td></tr>";
 		return exprContent;
@@ -213,6 +211,21 @@ public class WorkflowManagement {
 	}
 	
 	
+	public Element getException(String id) {
+		Document exceptionDoc = null;
+		try {
+			exceptionDoc = new SAXReader().read(new File(ProjectUtil
+					.getExceptionsPath()));
+		} catch (DocumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		Element exception = (Element) exceptionDoc.selectSingleNode("/exceptions/exception[id='"+id+"']");
+		
+		return exception;
+	}
+
 	public String userInput2Html(String interfaceDesc) {
 		Document doc = null;
 		try {
@@ -223,8 +236,7 @@ public class WorkflowManagement {
 		}
 		Element interfaceElement = doc.getRootElement();
 		String htmlContent = "<table cellpadding=\"3\" cellspacing=\"3\"  bgcolor=\"#EAEAEA\" style=\"border: 1px #000000 solid;\" width=\"99%\"><tr><td height=\"20\" valign=\"top\">Workflow: "
-				+ interfaceElement.elementText("Fun")
-				+ "</td></tr>";
+				+ interfaceElement.elementText("Fun") + "</td></tr>";
 		List<Element> list = interfaceElement.elements();
 		for (int i = 1; i < list.size(); i++) {
 			Element ele = list.get(i);
@@ -246,11 +258,9 @@ public class WorkflowManagement {
 		for (int i = 0; i < list.size(); i++) {
 			Element ele = list.get(i);
 			if (ele.getName().equalsIgnoreCase("Expr"))
-				exprContent += exprElementToHtml1(ele, space
-						+ "&nbsp;&nbsp;");
+				exprContent += exprElementToHtml1(ele, space + "&nbsp;&nbsp;");
 			if (ele.getName().equalsIgnoreCase("Var"))
-				exprContent += indElementToHtml1(ele, space
-						+ "&nbsp;&nbsp;");
+				exprContent += indElementToHtml1(ele, space + "&nbsp;&nbsp;");
 		}
 		exprContent += "</table></td></tr>";
 		return exprContent;
@@ -261,8 +271,8 @@ public class WorkflowManagement {
 		String value = "";
 		if (ele.attribute("default") != null)
 			value = ele.attributeValue("default");
-			indContent += ele.attributeValue("name").trim()
-					+ ":&nbsp;&nbsp;" + value;
+		indContent += ele.attributeValue("name").trim() + ":&nbsp;&nbsp;"
+				+ value;
 		indContent += "</td></tr>";
 		return indContent;
 	}

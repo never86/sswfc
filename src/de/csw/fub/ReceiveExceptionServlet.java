@@ -110,8 +110,8 @@ public class ReceiveExceptionServlet extends HttpServlet {
 				htElement.addElement("state").setText(task.getState());
 				htElement.addElement("actualSolver").setText(
 						task.getActualSolver());
-				htElement.addElement("expectedSolver").setText(
-						task.getExpectedSolver());
+				// htElement.addElement("expectedSolver").setText(
+				// task.getExpectedSolver());
 				write(htsDoc, ProjectUtil.getHTSDBPath());
 
 			} catch (DocumentException e) {

@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*,de.csw.fub.*"
+<%@ page language="java" import="java.util.*,de.csw.fub.*,org.dom4j.Element"
 	contentType="text/html; charset=utf-8"%>
 <%
 	String path = request.getContextPath();
@@ -50,7 +50,7 @@ body {
 </head>
 
 <body>
-	<form name="form1" method="get" action="http://127.0.0.1:8888/">
+	<form name="form1" method="post" action="validation.jsp">
 		<table width="1011" border="0" align="center" cellpadding="0"
 			cellspacing="0" bgcolor="#FFFFFF">
 			<tr>
@@ -68,6 +68,7 @@ body {
 										border="0"> </a>
 								</div>
 							</td>
+
 						</tr>
 					</table></td>
 			</tr>
@@ -137,39 +138,78 @@ body {
 					</table> <br>
 				<br>
 				<br></td>
-				<td width="746" valign="top">
-					<%
-						String desc = WorkflowManagement.INSTANCE.toRRuleML(request);
-						String content = WorkflowManagement.INSTANCE.userInput2Html(desc);
-					%> <textarea name="rulemlIDL" style="display: none;"><%=desc%></textarea>
-					<table width="80%" border="0" align="center" cellpadding="0"
-						cellspacing="0">
-						<tr>
-							<td valign="center"><br>
-								<div align="left" class="STYLE20">Confirmation:
-								</div></td>
-						</tr>
+				<td width="80%" valign="top">
 
-						<tr>
-							<td valign="top">
-								<div align="left"><%=content%></div>
+					<div align="right" style="font-size: 10px">
+						<br>
+						<table width="100%" border="0" align="center" cellpadding="0"
+									cellspacing="0">
+									<tr>
+										<td height="40"><div align="left">
+									  <strong>&nbsp;&nbsp;Exception:</strong></div></td>
+									</tr>
+								</table>
+						<table width="90%" border="0" align="center" cellspacing="0"
+							bordercolor="#E8AB78" bgcolor="FFFFFF" class="table-4"
+							style="border: 1px #000000 solid; border-right: none; border-bottom: none">
 
-							</td>
-						</tr>
-						<tr>
-							<td height="50" colspan="2">
-								<div align="center">
-									<input value="Submit" name="submit" type="button"
-										onClick="analyse()" />
-								</div>
-							</td>
-						</tr>
+							<%
+								String id = request.getParameter("id");
+								WorkflowManagement wm = new WorkflowManagement();
+										Element e = wm.getException(id);
+										
+										String temp = new WorkflowManagement().formatXml(e.elementText("payload"));
+							%>
+							
+							<tr>
+								<td height="30" class="downline-gud1"><div align="right">
+										<strong>ID:&nbsp; </strong>
+									</div></td>
+								<td height="30" class="downline-gud1">&nbsp;&nbsp;<%=e.elementText("id")%></td>
+							</tr>
+							
+							<tr>
+								<td width="20%" height="30" class="downline-gud1"><div
+										align="right">
+										<strong>Conversation ID:&nbsp; </strong>
+									</div></td>
+								<td width="86%" height="30" class="downline-gud1">&nbsp;&nbsp;<%=e.elementText("cid")%></td>
+							</tr>
+							
+							<tr>
+								<td width="20%" height="30" class="downline-gud1"><div
+										align="right">
+										<strong>Type:&nbsp; </strong>
+									</div></td>
+								<td width="86%" height="30" class="downline-gud1">&nbsp;&nbsp;<%=e.attributeValue("type")%></td>
+							</tr>
+							
 
-						<tr>
-							<td height="50" valign="top"><span id="result"></span><br /></td>
-						</tr>
+							<tr>
+								<td height="30" class="downline-gud1"><div align="right">
+										<strong>Workflow:&nbsp; </strong>
+									</div></td>
+								<td height="30" class="downline-gud1">&nbsp;&nbsp;<%=e.elementText("workflowName")%></td>
+							</tr>
+							
 
-					</table>
+							<tr>
+								<td height="30" class="downline-gud1"><div align="right">
+										<strong>Occurred at:&nbsp; </strong>
+									</div></td>
+								<td height="30" class="downline-gud1">&nbsp;&nbsp;<%=e.elementText("receivedTime")%></td>
+							</tr>
+							
+							<tr>
+								<td class="downline-gud1"><div align="right">
+										<strong>Payload:&nbsp; </strong>
+									</div></td>
+								<td valign="top" class="downline-gud1"><xmp><%=temp%></xmp></xmp></td>
+							</tr>
+			
+						</table>
+						<br>
+					</div>
 				</td>
 			</tr>
 			<tr>
