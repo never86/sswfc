@@ -192,6 +192,13 @@ body {
 								<td height="30" class="downline-gud1">&nbsp;&nbsp;<%=e.elementText("workflowName")%></td>
 							</tr>
 							
+							<tr>
+								<td height="30" class="downline-gud1"><div align="right">
+										<strong>Sender:&nbsp; </strong>
+									</div></td>
+								<td height="30" class="downline-gud1">&nbsp;&nbsp;<%=e.elementText("sender")%></td>
+							</tr>
+							
 
 							<tr>
 								<td height="30" class="downline-gud1"><div align="right">

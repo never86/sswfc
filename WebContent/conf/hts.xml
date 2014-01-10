@@ -2,11 +2,11 @@
 <hts>
 	<ht type="Human Task">
 		<cid>httpEndpoint:1</cid>
-		<id>5c9b0992-3bff-4ff4-aa22-4824afeacb80</id>
+		<id>3bff-4ff4-aa22-4824afeacb80</id>
 		<receivedTime>2013-4-18 12:26:35</receivedTime>
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
-		<sender>csw2012_HumanAgent</sender>
+		<sender>humanAgentProxy</sender>
 		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
 			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
@@ -19,11 +19,11 @@
 	</ht>
 	<ht type="Human Task">
 		<cid>httpEndpoint:1</cid>
-		<id>da75dad3-37f4-4cf8-bfb5-608cc001226a</id>
+		<id>37f4-4cf8-bfb5-608cc001226a</id>
 		<receivedTime>2014-1-9 15:36:47</receivedTime>
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
-		<sender>semantic_SWF_Engine</sender>
+		<sender>humanAgentProxy</sender>
 		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
 			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
@@ -36,7 +36,7 @@
 	</ht>
 	<ht type="Human Task">
 		<cid>httpEndpoint:1</cid>
-		<id>92c0d955-313e-4ede-89db-458796defd16</id>
+		<id>313e-4ede-89db-458796defd16</id>
 		<receivedTime>2014-1-9 15:54:12</receivedTime>
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
@@ -53,7 +53,7 @@
 	</ht>
 	<ht type="Human Task">
 		<cid>httpEndpoint:1</cid>
-		<id>b3148a2b-fa67-4ae5-8959-8168ab58d0b2</id>
+		<id>fa67-4ae5-8959-8168ab58d0b2</id>
 		<receivedTime>2014-1-9 16:13:55</receivedTime>
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
@@ -70,7 +70,7 @@
 	</ht>
 	<ht type="Human Task">
 		<cid>httpEndpoint:2</cid>
-		<id>9cc4cf7d-d6b7-4b90-96bd-dfbd15774c2c</id>
+		<id>d6b7-4b90-96bd-dfbd15774c2c</id>
 		<receivedTime>2014-1-9 16:15:48</receivedTime>
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>

@@ -184,6 +184,14 @@ body {
 								<td height="30" class="downline-gud1">&nbsp;&nbsp;<%=task.getWorkflowName()%></td>
 							</tr>
 							<tr>
+								<td height="30" class="downline-gud1"><div align="right">
+										<strong>Sender:&nbsp; </strong>
+									</div></td>
+								<td height="30" class="downline-gud1">&nbsp;&nbsp;<%=task.getSender()%><input
+									type="hidden" name="sender" height="100 px" class="input1" size="30"
+									value=<%=task.getSender()%>></td>
+							</tr>
+							<tr>
 								<td class="downline-gud1"><div align="right">
 										<strong>Payload:&nbsp; </strong>
 									</div></td>

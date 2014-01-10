@@ -83,7 +83,7 @@ public class ReceiveExceptionServlet extends HttpServlet {
 			task.setReceivedTime(new Date());
 
 			task.setCid(msg.element("oid").elementText("Ind"));
-			task.setId(java.util.UUID.randomUUID().toString());
+			task.setId(java.util.UUID.randomUUID().toString().substring(6));
 			task.setSender(msg.element("sender").elementText("Ind"));
 			task.setPayload(msg.element("content").asXML());
 			task.setType(decideType(msg));

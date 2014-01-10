@@ -175,7 +175,7 @@ body {
 
 						<tr class="table-wei3">
 							<td height="30" class="downline-gud1"><div align="center">
-									<strong>XID</strong>
+									<strong>ID</strong>
 								</div></td>
 							<td height="30" class="downline-gud1"><div align="center">
 									<strong>Type</strong>
@@ -236,7 +236,7 @@ body {
 						%>
 						<tr>
 							<td height="38" class="downline-gud1"><div align="center">
-									<a href="solution.jsp?id=<%=task.getId()%>"><%=task.getCid()%></a>
+									<a href="solution.jsp?id=<%=task.getId()%>"><%=task.getId()%></a>
 								</div></td>
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getType()%></div></td>
 							<td height="38" class="downline-gud1"><div align="center"><%=task.getWorkflowName()%></div></td>

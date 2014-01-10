@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <exceptions>
 	<exception type="unavailableAgent">
-		<id>5e686038-3470-48ea-89e6-07fdf7bdbdc8</id>
+		<id>3470-48ea-89e6-07fdf7bdbdc8</id>
 		<cid>httpEndpoint:1</cid>
 		<receivedTime>2013-4-18 12:25:31</receivedTime>
 		<workflowName>human_interaction</workflowName>
-		<sender>csw2012_HumanAgent</sender>
+		<sender>humanAgentProxy</sender>
 		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;human_interaction&lt;/Rel&gt; &lt;Expr&gt;
 			&lt;Fun&gt;unavailableAgent&lt;/Fun&gt; &lt;Ind

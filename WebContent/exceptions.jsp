@@ -170,10 +170,6 @@ body {
 												align="center">
 												<strong>ID</strong>
 											</div></td>
-										<td width="76" height="39" class="downline-gud1"><div
-												align="center">
-												<strong>XID</strong>
-											</div></td>
 										<td width="35" class="downline-gud1"><div align="center">
 												<strong>Type</strong>
 											</div></td>
@@ -196,7 +192,6 @@ body {
 									%>
 									<tr>
 										<td height="38" class="downline-gud1"><div align="center"><a href="exception.jsp?id=<%=exceptionElement.elementText("id")%>"><%=exceptionElement.elementText("id")%></a></div></td>
-										<td height="38" class="downline-gud1"><div align="center"><%=exceptionElement.elementText("cid")%></div></td>
 										<td height="38" class="downline-gud1"><div align="center"><%=exceptionElement.attributeValue("type")%></div></td>
 										<td height="38" class="downline-gud1"><div align="center"><%=exceptionElement.elementText("workflowName")%></div></td>
 										<td height="38" class="downline-gud1"><div align="center"><%=exceptionElement.elementText("receivedTime")%></div></td>

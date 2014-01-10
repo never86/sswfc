@@ -145,7 +145,7 @@ body {
 
  	ReplyProcessor rp = new ReplyProcessor();
  	String message = rp.messageGenerator(cid, solution);
- 	boolean tag = rp.send(message);
+ 	boolean tag = rp.send(message, sender.trim());
  	if (tag) {
  		new HumanAgent().updateTask(id, solver, solution);
  %> The solution has been successfully sent. <a href="index.jsp">Back</a>

@@ -11,16 +11,21 @@ import com.oreilly.servlet.HttpMessage;
 public class ReplyProcessor {
 	
 
-	public boolean send(String finalMessage) {
+	public boolean send(String finalMessage, String sender) {
 		boolean tag = true;
-		URL sender = null;
+		String port = "";
+		if(sender.equalsIgnoreCase("humanAgentProxy"))
+			port = "9992";
+		else if(sender.equalsIgnoreCase("exceptionHandlingAgent"))
+			port = "9993";
+		URL senderURL = null;
 		try {
-			sender = new URL("http://localhost" + ":" + "9992/");
+			senderURL = new URL("http://localhost" + ":" + port+"/");
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		HttpMessage msg = new HttpMessage(sender);
+		HttpMessage msg = new HttpMessage(senderURL);
 		Properties props = new Properties();
 
 		System.out.println(finalMessage);
