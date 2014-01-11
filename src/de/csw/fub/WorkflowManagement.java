@@ -269,7 +269,9 @@ public class WorkflowManagement {
 	private String indElementToHtml1(Element ele, String space) {
 		String indContent = "<tr><td height=\"20\">" + space;
 		String value = "";
-		if (ele.attribute("default") != null)
+		if (ele.getText() != "")
+			value = ele.getText();
+		else
 			value = ele.attributeValue("default");
 		indContent += ele.attributeValue("name").trim() + ":&nbsp;&nbsp;"
 				+ value;
