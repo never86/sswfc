@@ -32,9 +32,9 @@ public class WorkflowManagement {
 	// XML namespace for Reaction RuleML
 	public final String XSI_NS = "http://www.w3.org/2001/XMLSchema-instance";
 
-	public final String RRML_NS = "http://www.ruleml.org/0.91/xsd";
+	public final String RRML_NS = "http://ruleml.org/spec";
 
-	public final String SCHEMA_INSTANCE = "http://www.ruleml.org/0.91/xsd http://ibis.in.tum.de/research/ ReactionRuleML/0.2/rr.xsd";
+	public final String SCHEMA_INSTANCE = "http://ruleml.org/spec http://www.ruleml.org/1.0/xsd/datalog.xsd";
 
 	public List<AbstractWorkflow> getWorkflows() {
 		List<AbstractWorkflow> workflows = new ArrayList();

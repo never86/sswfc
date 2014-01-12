@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
-	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.ruleml.org/0.91/xsd">
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://reaction.ruleml.org/1.0/xsd/dr.xsd">
 	<xsl:output method="xml" version="1.0" encoding="UTF-8"
 		indent="yes" />
 	<xsl:template match="/">

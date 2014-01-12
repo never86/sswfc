@@ -6,7 +6,7 @@
 		<receivedTime>2013-4-18 12:25:31</receivedTime>
 		<workflowName>human_interaction</workflowName>
 		<sender>humanAgentProxy</sender>
-		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
+		<payload>&lt;content xmlns="http://reaction.ruleml.org/1.0/xsd/dr.xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;human_interaction&lt;/Rel&gt; &lt;Expr&gt;
 			&lt;Fun&gt;unavailableAgent&lt;/Fun&gt; &lt;Ind
 			type="java.lang.String"&gt;minus&lt;/Ind&gt; &lt;Ind

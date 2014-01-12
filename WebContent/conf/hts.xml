@@ -7,7 +7,7 @@
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
 		<sender>humanAgentProxy</sender>
-		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
+		<payload>&lt;content xmlns="http://reaction.ruleml.org/1.0/xsd/dr.xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
 			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
 			&lt;Fun&gt;value&lt;/Fun&gt; &lt;Var&gt;@50443&lt;/Var&gt;
@@ -24,7 +24,7 @@
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
 		<sender>humanAgentProxy</sender>
-		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
+		<payload>&lt;content xmlns="http://reaction.ruleml.org/1.0/xsd/dr.xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
 			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
 			&lt;Fun&gt;value&lt;/Fun&gt; &lt;Var&gt;@728&lt;/Var&gt;
@@ -41,7 +41,7 @@
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
 		<sender>humanAgentProxy</sender>
-		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
+		<payload>&lt;content xmlns="http://reaction.ruleml.org/1.0/xsd/dr.xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
 			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
 			&lt;Fun&gt;value&lt;/Fun&gt; &lt;Var&gt;@728&lt;/Var&gt;
@@ -58,7 +58,7 @@
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
 		<sender>exceptionHandlingAgent</sender>
-		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
+		<payload>&lt;content xmlns="http://reaction.ruleml.org/1.0/xsd/dr.xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
 			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
 			&lt;Fun&gt;value&lt;/Fun&gt; &lt;Var&gt;@1063&lt;/Var&gt;
@@ -75,7 +75,7 @@
 		<workflowName>human_interaction</workflowName>
 		<resolvedTime>3013-01-01 00:00:00</resolvedTime>
 		<sender>exceptionHandlingAgent</sender>
-		<payload>&lt;content xmlns="http://www.ruleml.org/0.91/xsd"&gt;
+		<payload>&lt;content xmlns="http://reaction.ruleml.org/1.0/xsd/dr.xsd"&gt;
 			&lt;Atom&gt; &lt;Rel&gt;assign&lt;/Rel&gt; &lt;Ind
 			type="java.lang.String"&gt;human_interaction&lt;/Ind&gt; &lt;Expr&gt;
 			&lt;Fun&gt;value&lt;/Fun&gt; &lt;Var&gt;@1882&lt;/Var&gt;

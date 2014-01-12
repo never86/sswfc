@@ -44,7 +44,7 @@ public class ReplyProcessor {
 
 	public String  messageGenerator(String id, String content) {
 
-		String part1 = "<RuleML xmlns=\"http://www.ruleml.org/0.91/xsd\" xsi:schemaLocation=\"http://www.ruleml.org/0.91/xsd http://ibis.in.tum.de/research/ ReactionRuleML/0.2/rr.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"> "+
+		String part1 = "<RuleML xmlns=\"http://ruleml.org/spec\" xsi:schemaLocation=\"http://ruleml.org/spec http://www.ruleml.org/1.0/xsd/datalog.xsd\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"> "+
 				  "<Message mode=\"outbound\" directive=\"answer\">"+
 				  "<oid><Ind>";
 		String part2 = part1 + id.trim()+"</Ind></oid>"+"<protocol><Ind>esb</Ind></protocol>"+"<sender><Ind>";
