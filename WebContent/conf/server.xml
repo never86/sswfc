@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mule>
+<http-endpoint name = "mule" address="http://localhost:8888"></http-endpoint>
+<http-endpoint name = "exceptionHandlingAgent" address="http://localhost:9993/"></http-endpoint>
+<http-endpoint name = "humanAgentProxy" address="http://localhost:9992/"></http-endpoint>
+</mule>

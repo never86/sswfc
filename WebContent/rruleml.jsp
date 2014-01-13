@@ -141,6 +141,7 @@ body {
 					<%
 						String desc = WorkflowManagement.INSTANCE.toRRuleML(request);
 						String content = WorkflowManagement.INSTANCE.userInput2Html(desc);
+						String muleAddress = WorkflowManagement.INSTANCE.getMuleAddress();
 					%> <textarea name="rulemlIDL" style="display: none;"><%=desc%></textarea>
 					<table width="80%" border="0" align="center" cellpadding="0"
 						cellspacing="0">
@@ -179,7 +180,7 @@ body {
 				<td height="90" colspan="2"><div align="center">Supported
 						by China Scholarship Council (2010-2014).</div></td>
 			</tr>
-		</table>
+		</table><input name="mule" value="<%=muleAddress%>" type="hidden">
 	</form>
 </body>
 </html>

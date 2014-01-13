@@ -46,7 +46,7 @@ function processResponse() {
 			document.getElementById("result").innerHTML = XMLHttpReq.responseText;
 		} else {
 			window.alert(XMLHttpReq.status);
-			window.alert("Parsing Error1!");
+			window.alert("Parsing Error!");
 		}
 	}
 }
@@ -54,11 +54,11 @@ function processResponse() {
 function analyse() {
 	
 	var rulemlIDL = document.form1.rulemlIDL.value;
-
+	var muleAddress = document.form1.mule.value;
 	
 	createXMLHttpRequest();
 	document.form1.submit.disabled=true;
-	XMLHttpReq.open("GET", "http://localhost:8888?payload=" + rulemlIDL, true);
+	XMLHttpReq.open("GET", muleAddress + "?payload=" + rulemlIDL, true);
 	document.getElementById("result").innerHTML = "Waiting for the results from the workflow engine...";
 	XMLHttpReq.onreadystatechange = processAnalyseResponse;
 	XMLHttpReq.setRequestHeader("If-Modified-Since","0"); 

@@ -28,7 +28,7 @@ import de.csw.fub.util.ProjectUtil;
 @WebServlet("/ReceiveExceptionServlet")
 public class ReceiveExceptionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+    private static Document exceptionDoc = null;
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
@@ -63,7 +63,9 @@ public class ReceiveExceptionServlet extends HttpServlet {
 			message = message + input;
 		}
 
-		System.out.println("Received Exception Message: " + message);
+		System.out.println("============== Exception Message ===========");
+		System.out.println(WorkflowManagement.INSTANCE.formatXml(message));
+		System.out.println("==================== END ===================");
 
 		Document doc = null;
 		try {
@@ -133,9 +135,8 @@ public class ReceiveExceptionServlet extends HttpServlet {
 
 	private void recordException(Element msg, String cid) {
 		// TODO Auto-generated method stub
-
-		Document exceptionDoc = null;
 		try {
+			if (exceptionDoc == null)
 			exceptionDoc = new SAXReader().read(new File(ProjectUtil
 					.getExceptionsPath()));
 		} catch (DocumentException e) {

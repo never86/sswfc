@@ -28,13 +28,10 @@ import de.csw.fub.util.ProjectUtil;
 public class WorkflowManagement {
 
 	public static WorkflowManagement INSTANCE = new WorkflowManagement();
-
-	// XML namespace for Reaction RuleML
-	public final String XSI_NS = "http://www.w3.org/2001/XMLSchema-instance";
-
-	public final String RRML_NS = "http://ruleml.org/spec";
-
-	public final String SCHEMA_INSTANCE = "http://ruleml.org/spec http://www.ruleml.org/1.0/xsd/datalog.xsd";
+	
+	private static Document wfDoc = null;
+	
+	private static Document confDoc = null;
 
 	public List<AbstractWorkflow> getWorkflows() {
 		List<AbstractWorkflow> workflows = new ArrayList();
@@ -54,7 +51,23 @@ public class WorkflowManagement {
 
 	private Document getDocOfWF() {
 		try {
+			if(wfDoc == null)
 			return new SAXReader().read(new File(ProjectUtil.getWFSDBPath()));
+			else return wfDoc;
+		} catch (DocumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	public String getMuleAddress() {
+		try {
+			if(confDoc == null)
+				confDoc = new SAXReader().read(new File(ProjectUtil.getConfigPath()));
+				Element httpEndpoint = (Element) confDoc
+						.selectSingleNode("//http-endpoint[@name='mule']");
+				return httpEndpoint.attributeValue("address");
 		} catch (DocumentException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -69,9 +82,9 @@ public class WorkflowManagement {
 
 		if (interfaceElement == null)
 			return "Interal Error!";
-		String htmlContent = "<table cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"20\" valign=\"top\"><span class=\"STYLE4\">Workflow: "
+		String htmlContent = "<table cellpadding=\"0\" cellspacing=\"0\"><tr><td height=\"20\" valign=\"top\"><span class=\"STYLE4\"><b>Workflow</b>: "
 				+ interfaceName
-				+ ".</span></td></tr><tr><td height=\"20\"><span class=\"STYLE4\" style=\"line-height:1.2\">Description: "
+				+ ".</span></td></tr><tr><td height=\"20\"><span class=\"STYLE4\" style=\"line-height:1.2\"><b>Description</b>: "
 				+ interfaceElement.selectSingleNode("label/Expr/Ind").getText()
 				+ "</span></td></tr>";
 		List<Element> list = interfaceElement.elements();
@@ -89,8 +102,8 @@ public class WorkflowManagement {
 
 	private String exprElementToHtml(Element element, String space) {
 		String exprContent = space
-				+ "<tr><td><table width=\"100%\"><tr><td  height=\"20\">"
-				+ element.element("Fun").attributeValue("meta") + "</td></tr>";
+				+ "<tr><td><table width=\"100%\"><tr><td  height=\"20\"><b>"
+				+ element.element("Fun").attributeValue("meta") + "</b></td></tr>";
 		List<Element> list = element.elements();
 		for (int i = 0; i < list.size(); i++) {
 			Element ele = list.get(i);
@@ -235,7 +248,7 @@ public class WorkflowManagement {
 			e.printStackTrace();
 		}
 		Element interfaceElement = doc.getRootElement();
-		String htmlContent = "<table cellpadding=\"3\" cellspacing=\"3\"  bgcolor=\"#EAEAEA\" style=\"border: 1px #000000 solid;\" width=\"99%\"><tr><td height=\"20\" valign=\"top\">Workflow: "
+		String htmlContent = "<table cellpadding=\"3\" cellspacing=\"3\"  bgcolor=\"#EAEAEA\" style=\"border: 1px #000000 solid;\" width=\"99%\"><tr><td height=\"20\" valign=\"top\"><b>Workflow</b>: "
 				+ interfaceElement.elementText("Fun") + "</td></tr>";
 		List<Element> list = interfaceElement.elements();
 		for (int i = 1; i < list.size(); i++) {
@@ -252,8 +265,8 @@ public class WorkflowManagement {
 
 	private String exprElementToHtml1(Element element, String space) {
 		String exprContent = space
-				+ "<tr><td><table width=\"100%\"><tr><td  height=\"20\">"
-				+ element.element("Fun").attributeValue("meta") + ":</td></tr>";
+				+ "<tr><td><table width=\"100%\"><tr><td  height=\"20\"><b>"
+				+ element.element("Fun").attributeValue("meta") + "</b>:</td></tr>";
 		List<Element> list = element.elements();
 		for (int i = 0; i < list.size(); i++) {
 			Element ele = list.get(i);

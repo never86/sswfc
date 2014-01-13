@@ -23,14 +23,19 @@ public class ProjectUtil {
 		  return ProjectUtil.getProjectDir()+"conf"+File.separator+"workflows.xml";
 	 }
 
-	public static String getXSLTPath() {
-		// TODO Auto-generated method stub
-		 return ProjectUtil.getProjectDir()+"conf"+File.separator+"provaInterface2HTML.xslt";
-	}
+//	public static String getXSLTPath() {
+//		// TODO Auto-generated method stub
+//		 return ProjectUtil.getProjectDir()+"conf"+File.separator+"provaInterface2HTML.xslt";
+//	}
 
 	public static String getExceptionsPath() {
 		// TODO Auto-generated method stub
 		return ProjectUtil.getProjectDir()+"conf"+File.separator+"exceptions.xml";
+	}
+	
+	public static String getConfigPath() {
+		// TODO Auto-generated method stub
+		return ProjectUtil.getProjectDir()+"conf"+File.separator+"server.xml";
 	}
 	
 }
