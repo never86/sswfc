@@ -11,7 +11,7 @@
 <html>
 <head>
 
-<title>Semantic Scientific Workflows</title>
+<title>Rule Responder eScientist</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="pragma" content="no-cache">
 
@@ -59,13 +59,12 @@ body {
 					<tr>
 						<td width="15%"><div align="right">
 								<a href="http://www.corporate-semantic-web.de/"><img
-									src="logo.jpg" alt="Semantic Scientific Workflow" width="118"
+									src="logo.jpg" alt="Corporate Semantic Web" width="120"
 									border="0"> </a>
 							</div></td>
 						<td height="70" width="85%">
 							<div align="left">
-								&nbsp;<a href="index.jsp"><img src="projectName.gif"
-									alt="Corporate Semantic Web" width="442" height="73" border="0">
+								&nbsp;<a href="index.jsp"><img src="projectName.gif" width="442"  border="0">
 								</a>
 							</div>
 						</td>
@@ -103,7 +102,7 @@ body {
 								class="STYLE20">
 								<div align="left">
 									&nbsp;&nbsp;&nbsp;&nbsp;<img src="item.jpg" height="15">&nbsp;&nbsp;<a
-										href="http://grid.lzu.edu.cn:6060/openrdf-workbench/"
+										href="http://localhost:8080/openrdf-workbench/"
 										class="l-blue1">Resources</a>
 								</div>
 							</div></td>
