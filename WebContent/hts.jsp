@@ -59,7 +59,7 @@ body {
 								</div></td>
 							<td height="70" width="85%">
 								<div align="left">
-									&nbsp;<a href="index.jsp"><img src="ruleml2011.jpg"
+									&nbsp;<a href="index.jsp"><img src="projectName.gif"
 										alt="Corporate Semantic Web" width="442" height="73"
 										border="0"> </a>
 								</div>

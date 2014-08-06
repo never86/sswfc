@@ -16,8 +16,8 @@
 			<Var mode="+"  type = "java.lang.Double" meta="3rd Input" default="6.4" name="WI3"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
-			<Var mode="-" meta="1st Ouput" default="WO1" name="WO1"></Var>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
 		</Expr>
 	</interface>
 	
@@ -46,15 +46,15 @@
 
 		<Var mode="+" type = "java.lang.String" meta="Ant stinger" default="no" name="Stinger"></Var>
 		<Var mode="+" type = "java.lang.String" meta="Ant worker" default="monomorphic" name="Worker"></Var>
-		<Var mode="+" type = "java.lang.String" meta="Ant length (meter)" default="0.125" name="Long"></Var>
+		<Var mode="+" type = "java.lang.Double" meta="Ant length (meter)" default="0.125" name="Length"></Var>
 		
-			<Var mode="+" type = "java.lang.String" meta="Ant food" default="sweets" name="Food"></Var>
+			<Var mode="+" type = "java.lang.String" meta="Ant food" default="sugars" name="Food"></Var>
 	
 		
-		<Var mode="+" type = "java.lang.String" meta="Discovery location" default="Berlin" name="Location"></Var>
+		<Var mode="+" type = "java.lang.String" meta="Discovery location" default="Berlin" candiates="Berlin:Berlin;Lanzhou:Lanzhou" name="Location">Location</Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
 			<Var mode="-" type = "java.lang.String" meta="Identification Result" default="Result" name="Result"></Var>
 		</Expr>
 		
@@ -75,8 +75,8 @@
 			<Var mode="+"  type = "java.lang.Double" meta="3rd Input" default="6.4" name="WI3"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
-			<Var mode="-" meta="1st Ouput" default="WO1" name="WO1"></Var>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
 		</Expr>
 	</interface>
 	
@@ -95,9 +95,9 @@
 			<Var mode="+"  type = "java.lang.Double" meta="3rd Input" default="6.4" name="WI3"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
-			<Var mode="-" meta="1st Ouput" default="WO1" name="WO1"></Var>
-			<Var mode="-" meta="2nd Ouput" default="WO2" name="WO2"></Var>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
+			<Var mode="-" meta="2nd Output" default="WO2" name="WO2"></Var>
 		</Expr>
 	</interface>
 	
@@ -116,7 +116,7 @@
 			<Var mode="+"  type = "java.lang.String" meta="Gene term" default="GO:0006564" name="goTerm"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
 			<Var mode="-" meta="Analysis result" default="Result" name="Result"></Var>
 		</Expr>
 	</interface>
@@ -136,7 +136,7 @@
 			<Var mode="+" type = "java.lang.String" meta="File of the samples" default="src/main/app/rules/snow_depth_monitoring/samples.txt" name="File"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
 			<Var mode="-" meta="Analysis result" default="Result" name="Result"></Var>
 		</Expr>
 	</interface>
@@ -156,8 +156,8 @@
 			<Var mode="+"  type = "java.lang.Double" meta="3rd Input" default="6.4" name="WI3"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
-			<Var mode="-" meta="1st Ouput" default="WO1" name="WO1"></Var>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
 		</Expr>
 	</interface>
 	
@@ -176,8 +176,8 @@
 			<Var mode="+"  type = "java.lang.Double" meta="3rd Input" default="6.4" name="WI3"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
-			<Var mode="-" meta="1st Ouput" default="WO1" name="WO1"></Var>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
 		</Expr>
 	</interface>
 	
@@ -197,8 +197,8 @@
 			<Var mode="+"  type = "java.lang.Double" meta="3rd Input" default="6.4" name="WI3"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
-			<Var mode="-" meta="1st Ouput" default="WO1" name="WO1"></Var>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
 		</Expr>
 	</interface>
 	
@@ -218,8 +218,27 @@
 			<Var mode="+"  type = "java.lang.Double" meta="2nd Input" default="3.5" name="WI2"></Var>
 		</Expr>
 		<Expr>
-			<Fun meta="Workflow ouput(s)">outArgs</Fun>
-			<Var mode="-" meta="1st Ouput" default="WO1" name="WO1"></Var>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
+		</Expr>
+	</interface>
+	
+	<interface>
+		<label>
+            <!-- Human-oriented description of the interface -->
+            <Expr>
+               <Fun uri="dc:description"/>
+               <Ind>Testing infinie loop detection.</Ind>
+            </Expr>
+          </label>
+        <Fun per="value">infiniteLoopDetection</Fun>
+		<Expr>
+			<Fun meta="Workflow input(s)">inArgs</Fun>
+			<Var mode="+" type = "java.lang.Integer" meta="1st Input" default="5" name="WI1"></Var>
+		</Expr>
+		<Expr>
+			<Fun meta="Workflow output(s)">outArgs</Fun>
+			<Var mode="-" meta="1st Output" default="WO1" name="WO1"></Var>
 		</Expr>
 	</interface>
 </interfaces>

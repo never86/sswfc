@@ -67,7 +67,7 @@ body {
 							</div></td>
 						<td height="70" width="85%">
 							<div align="left">
-								&nbsp;<a href="index.jsp"><img src="ruleml2011.jpg"
+								&nbsp;<a href="index.jsp"><img src="projectName.gif"
 									alt="Corporate Semantic Web" width="442" height="73" border="0">
 								</a>
 							</div>
@@ -148,7 +148,7 @@ body {
 						<td><p align="justify" class="STYLE19 STYLE23"
 								style="line-height: 1.5">Scientific workflows accelerate the
 								pace of scientific progress in many scientific areas, such as:
-								astronomy, ecology, bioinformatics, earth science and etc.
+								astronomy, ecology, bioinformatics and earth science.
 								Scientists can benefit from an explicitly modeled and executed
 								workflow not only because it utilizes various resources from
 								different administrative domains and automates troublesome
@@ -158,23 +158,9 @@ body {
 							<p align="center" class="STYLE19 STYLE23"
 								style="line-height: 1.5">
 								<img src="wscf.jpg"
-									alt="Weakly-structured Scientific Workflow Family" width="280">
+									alt="Weakly-Structured Scientific Workflow Family" width="280">
 							</p>
-							<p align="justify" class="STYLE22" style="line-height: 1.5">Compared
-								to traditional business workflows, scientific workflows are
-								exploratory in nature and often executed in a what-if or
-								trial-and-error manner. Their outcome might be used to confirm
-								or invalidate a scientific hypothesis or serve some similar
-								experimental goals, which involve many repetitive, synchronous,
-								and concurrent tasks. Scientific workflows are more
-								dataflow-oriented and data is often streamed through independent
-								processes. Furthermore, scientific workflows are usually
-								executed in an evolving environment, where distributed resources
-								integrated are not only heterogeneous, but also may come and
-								disappear at any time. Therefore, a scientific workflow system
-								which is resilient to the volatile execution environment and
-								supports dynamic and adaptive workflow execution is the ultimate
-								goal of the scientific workflow community.</p></td>
+							<p align="justify" class="STYLE22" style="line-height: 1.5">Existing solutions for business workflows as well as scientific workflows mainly focus on the orchestrated and pre-structured execution of compute-intensive and data-oriented tasks. On the contrary, this project explicitly considers  weakly-structured scientific workflows, which contain goal-oriented tasks that have to make agile runtime decisions. They may involve interactions between multiple participants or have complicated logic to express scientific policies and cater to dynamic execution environments. In general, such weakly-structured scientific workflows not only need a rich process and (domain-specific) decision logic specification, but also require a flexible execution and human interaction.</p></td>
 					</tr>
 				</table>
 				<p class="STYLE19">&nbsp;</p></td>
